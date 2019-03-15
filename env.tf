@@ -1,10 +1,6 @@
 module "env" {
-  source = "github.com/dgillman/tf-aws-env"
-  version = "${var.env_module_version}"
+  source = "github.com/dgillman/tf-aws-env?ref=0.0.4"
 
   client = "${var.client}"
   project = "${var.project}"
-
-  # use of workspaces eliminates need for per-phase state bucket
-  release_phase = ""
 }

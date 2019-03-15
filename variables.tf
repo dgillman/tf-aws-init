@@ -24,11 +24,6 @@ variable "project" {
   default = "sample"
 }
 
-variable "env_module_version" {
-  description = "Version of dgillman/tf-aws-env module to use"
-  default = "0.0.3"
-}
-
 variable "remote_state_s3_bucket" {
   description = "Name for S3 bucket that will contain project remote state"
   default = ""
